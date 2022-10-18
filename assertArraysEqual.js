@@ -1,12 +1,13 @@
-let eqArrays = function(arrOne, arrTwo) {
-  //Fail counters
-  let fail = 0;
+let assertArraysEqual = function(arrOne, arrTwo) {
 
+  //Confirms array.length is greater than 0
   if (arrOne.length === 0 || arrTwo.length === 0) {
     console.log('Please enter a vaild Array');
     process.exit();
   }
 
+  //Fail counters
+  let fail = 0;
 
   for (let i = 0; i < arrOne.length; i++) {
     if (arrOne[i] !== arrTwo[i]) {
@@ -21,6 +22,6 @@ let eqArrays = function(arrOne, arrTwo) {
   }
 };
 
-eqArrays([1, 1, 2, 3,], [1, 1, 2, 3,]); // PASS
-eqArrays([1, 1, 2, 3,], [1, 2, 3, 4]); //FAIL
-eqArrays([], [1, 2]); //FAIL
+assertArraysEqual([1, 1, 2, 3,], [1, 1, 2, 3,]); // PASS
+assertArraysEqual([1, 1, 2, 3,], [1, 2, 3, 4]); //FAIL
+assertArraysEqual([], [1, 2]); //FAIL
