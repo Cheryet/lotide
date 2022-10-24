@@ -15,9 +15,3 @@ let letterPositions = function(sentence) {
   return results;
 };
 module.exports = letterPositions;
-
-// ~~~ Tests ~~~
-
-// console.log(letterPositions('lighthouse'));
-// console.log(letterPositions('lighthouse in the house'));
-// assertArraysEqual(letterPositions("hello").e, [1]);

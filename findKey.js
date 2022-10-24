@@ -10,6 +10,3 @@ const findKey = function(object, callback) {
 
 module.exports = findKey;
 
-// ~~~ Tests ~~~
-
-// ß

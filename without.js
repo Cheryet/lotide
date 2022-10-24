@@ -14,12 +14,3 @@ let without = function(source, itemsToRemove) {
 };
 
 module.exports = without;
-
-//Tests
-// without([1, 2, 3], [1]);
-// without(["1", "2", "3"], [1, 2, "3"]); // ['1', '2']
-// without(['1', '1', '2', '3'], ['2', '3']);
-
-// const words = ['Corbin', 'Cookies', 'Happy'];
-// without(words, ['Cookies']);
-// assertArraysEqual(words, ['Corbin', 'Cookies', 'Happy']);
