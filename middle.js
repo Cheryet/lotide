@@ -49,30 +49,16 @@ let eqArrays = function(arrOne, arrTwo) {
 let middle = function(array) {
 
   let middleIndex = array.length / 2;
-  console.log('Middle Index = ', middleIndex);
 
   //Checks if array is odd or even length
   if (middleIndex % 1 === 0) {
-    console.log(array[middleIndex - 1], array[middleIndex]);
     return [array[middleIndex - 1], array[middleIndex]];
   } else {
-    console.log(array[Math.floor(middleIndex)]);
     return array[Math.floor(middleIndex)];
   }
 };
 
+module.exports = middle;
 
 
-//~~~~ TESTS ~~~~
 
-//Odd Number of Elements
-middle([1, 2, 3]); // => [2]
-middle([1, 2, 3, 4, 5]); // => [3]
-
-//Even Number of Elements
-middle([1, 2, 3, 4]); // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
-
-//Assertions
-const myArray = [1, 2, 3, 4, 5, 6]; // => [3, 4]
-assertArraysEqual([3, 4], middle(myArray));
