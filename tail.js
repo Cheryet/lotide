@@ -6,7 +6,8 @@ let tail = function(arr) {
     let newArr = arr.slice(1);
     return newArr;
   } else {
-    return arr[0];
+    newArr = []
+    return newArr;
   }
 };
 
